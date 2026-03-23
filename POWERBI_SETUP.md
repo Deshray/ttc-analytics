@@ -262,48 +262,5 @@ To apply: **View → Themes → Customize current theme** and set these hex valu
 **Font:** Segoe UI (default Power BI) is fine — no need to change.
 
 **Page size:** Set to 1440 × 900 for each page (View → Page View → Actual Size).
-
 ---
 
-## Step 6 — Publish to Power BI Service
-
-1. **File → Publish → Publish to Power BI**
-2. Sign in with your `@uwaterloo.ca` Microsoft account
-3. Select **My Workspace**
-4. Once published, go to **app.powerbi.com**
-5. Find your report → click **Share** → **Anyone with the link can view**
-6. Copy the link — this is what goes on your resume and GitHub
-
----
-
-## Step 7 — Update your GitHub README
-
-After publishing, add the Power BI link to your README.md:
-
-```markdown
-🔗 **[Live Power BI Dashboard](your-link-here)**
-```
-
----
-
-## Resume bullets
-
-```
-TTC Transit Reliability Analytics | Python, SQL (DuckDB), Power BI,
-Scikit-Learn, Open-Meteo API, Toronto Open Data
-
-• Engineered a multi-source data pipeline joining 200,000+ real TTC bus
-  delay records with hourly Toronto weather data via Open-Meteo API,
-  performing joins, CTEs, and window-function aggregations in SQL (DuckDB)
-  to produce route-level reliability metrics across 100+ routes
-
-• Built a weather-driven service degradation model predicting whether a
-  route falls below TTC's 80% on-time target in a given 2-hour window,
-  using precipitation, temperature, and route-level risk statistics as
-  features, achieving OOF AUC of 0.XX on held-out validation windows
-
-• Delivered findings as a published 4-page Power BI dashboard with
-  executive KPIs, route drill-down, weather impact analysis, and a
-  7-day risk forecast — enabling operational staff to identify at-risk
-  routes before service degradation occurs
-```
